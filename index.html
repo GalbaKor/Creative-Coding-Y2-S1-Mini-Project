@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="src/styles.css" />
+    <!-- better to have stylesheet here than in JS as it loads the css faster-->
+    <title>CPC Mini-Project 1</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="overlay">
+      <!--overlay with play button is removed when clicked-->
+      <button id="startButton">Play</button>
+
+      <div class="circle-container1">
+        <div id="mercury" class="circle"></div>
+      </div>
+
+      <div class="circle-container2">
+        <div id="venus" class="circle"></div>
+      </div>
+
+      <div class="circle-container3">
+        <div id="earth" class="circle"></div>
+      </div>
+
+      <div class="circle-container4">
+        <div id="mars" class="circle"></div>
+      </div>
+
+      <div class="circle-container5">
+        <div id="asteroid1" class="circle"></div>
+        <div id="asteroid2" class="circle"></div>
+      </div>
+
+      <div class="circle-container6">
+        <div id="jupiter" class="circle"></div>
+        <div id="jupiterCircle" class="circle"></div>
+      </div>
+
+      <div class="circle-container7">
+        <div id="saturn" class="circle"></div>
+        <div id="saturnRing" class="circle"></div>
+      </div>
+
+      <div class="circle-container8">
+        <div id="uranus" class="circle"></div>
+        <div id="uranusRing" class="circle"></div>
+      </div>
+
+      <div class="circle-container9">
+        <div id="neptune" class="circle"></div>
+      </div>
+
+      <div class="circle-container10">
+        <div id="pluto" class="circle"></div>
+      </div>
+    </div>
+
+    <div id="description">
+      <!--<h1>System's Song</h1>-->
+      <button onclick="toggleDescription()">System's Song</button>
+    </div>
+    <div id="dropdowncontent">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Volutpat lacus
+        laoreet non curabitur gravida. <br /><br />Est ullamcorper eget nulla
+        facilisi etiam dignissim. Morbi non arcu risus quis varius quam quisque.
+        Tristique risus nec feugiat in. Rhoncus dolor purus non enim praesent
+        elementum facilisis leo. Lacus vel facilisis volutpat est velit egestas.
+        <br /><br />Lobortis elementum nibh tellus molestie. Fermentum dui
+        faucibus in ornare quam. Ornare aenean euismod elementum nisi quis
+        eleifend. Sagittis aliquam malesuada bibendum arcu. Mauris pellentesque
+        pulvinar pellentesque habitant morbi tristique senectus. Ut venenatis
+        tellus in metus vulputate. <br /><br />Sed risus ultricies tristique
+        nulla aliquet enim tortor. Morbi non arcu risus quis varius.
+      </p>
+    </div>
+
+    <div id="footer">
+      <a href="https://github.com/GalbaKor">Github</a>
+      <a href="http://camerontebbenhamsmall.panel.uwe.ac.uk/wordpress/"
+        >WordPress</a
+      >
+      <p>© Cameron Tebbenham-Small 2021</p>
+    </div>
+
+    <div id="canvasContainer"></div>
+
+    <script>
+      function toggleDescription() {
+        var x = document.getElementById("dropdowncontent");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
